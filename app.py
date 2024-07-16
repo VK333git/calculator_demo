@@ -1,4 +1,5 @@
 from operations import *  ##* for importing all the functions and variables
+from area import *
 def main():
     print("welcome to the calculator")
     print('''
@@ -6,6 +7,7 @@ def main():
           1. ADD
           2. SUBTRACT
           3. Multiply
+          4. Area
 ''')
     user_i = input("Enter your choice : ")
     a = int(input('enter the first number: '))
@@ -18,6 +20,8 @@ def main():
         result = do_sub(a,b)
     elif user_i == '3':
         result = do_mul(a,b)
+    elif user_i == '4':
+        result = area(a,b)
     else:
         print('wrong operation entered')
 
